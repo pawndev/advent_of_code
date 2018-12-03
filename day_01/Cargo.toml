@@ -1,0 +1,6 @@
+[package]
+name = "AoC"
+version = "0.1.0"
+authors = ["pawndev <coquelet.c@gmail.com>"]
+
+[dependencies]
