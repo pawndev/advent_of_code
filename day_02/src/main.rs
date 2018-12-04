@@ -20,11 +20,10 @@ fn part_one() {
     let mut already_two = false;
     let mut already_three = false;
 
-    //line.chars().map(|l| *occ.entry(l).or_insert(0) += 1);
     for l in line.chars() {
       *occ.entry(l).or_insert(0) += 1
     }
-    //println!("{:?}", line.chars());
+
     for (_k, v) in &occ {
       match v {
         3 => if already_three {()} else {threes += 1; already_three = true},
@@ -32,8 +31,6 @@ fn part_one() {
         _ => ()
       }
     }
-    //println!("{:?}", occ);
-    println!("twos: {:?}, threes: {:?}", twos, threes);
   }
   println!("twos: {:?}, threes: {:?}, twos*threes={:?}", twos, threes, twos * threes);
 }
